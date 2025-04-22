@@ -1,0 +1,10 @@
+version: '3.8'
+
+services:
+  cipher-api:
+    build: .
+    container_name: cipher-api
+    ports:
+      - "8080:8080"
+    environment:
+      SECRET_KEY: gYvR7BH7nCwdQmPA7ZaaceES4WuxBTzL
