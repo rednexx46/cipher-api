@@ -1,0 +1,12 @@
+version: "3.8"
+
+services:
+  cipher-api:
+    build: .
+    image: rednexx46/cipher-api:latest
+    container_name: cipher-api
+    ports:
+      - "8080:8080"
+    environment:
+      - CIPHER_KEY=my16byteSecret!
+    restart: unless-stopped
